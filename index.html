@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>homework07</title>
+</head>
+<body>
+
+	<script>
+		
+	let arrey = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+	let odd = function(arrey) {
+		let oddArrey = arrey.filter(function(odd) {
+			if(odd %2 === 1) {
+				return odd;
+			}
+		})
+		return oddArrey;
+	};
+
+	console.log(odd(arrey));
+
+	let even = function(arrey) {
+		let evenArrey = arrey.filter(function(even) {
+			if(even %2 === 0) {
+				return even;
+			}
+		})
+		return evenArrey;
+	};
+
+	console.log(even(arrey));
+	
+	let multiArray = [[1, 2, [3, 4, 5]], 6, 7, [8, [9], [10]], [[11, 12], [13, 14, 15], 16, 17], 18];
+        
+        let flat = function(array) {
+            let arr = array.toString().split(",").map(Number);
+            return arr;
+        }
+        console.log(flat(multiArray));
+
+	</script>
+	
+</body>
+</html>
